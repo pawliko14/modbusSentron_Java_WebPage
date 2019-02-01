@@ -1,0 +1,279 @@
+ 
+ <style>
+ .page-wrapper
+  {
+   width:100px;
+   margin:0 auto;
+  }
+  
+  /* .TEST TO CLASA DLA PRZYCISKOW YESTERDAY, LASAT WEEK, LAST MONTH, ALL DATA */
+  
+  .test {
+	  height:40px;
+	  width:120px;
+	  margin:5px;
+	  margin-left: 100px;
+	  font-size: 18px;
+	  
+	  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  border-radius: 8px;
+	  
+	 opacity: 0.9;
+	 transition: 0.3s;
+	 
+  }
+  .test:hover, .test:focus {
+  background-color: #2980B9;
+}
+/*--------------------------------------------------------- */
+
+ 
+ /* DROPBTN - PRZYCISK MACHINES */
+ 
+  .dropbtn {
+	  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  border-radius: 8px;
+	  
+  opacity: 0.8;
+  transition: 0.3s;
+	  
+  background-color: #3498DB;
+  color: black;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  position:absolute;
+  font-weight:bold;
+  top: 10px;
+  left: 50px;
+ 
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+ 
+}
+
+/*--------------------------------------------------------- */
+
+/* DROPDOWN - ROZWIJANE ELEMENTY PRZYCISKU MACHINES */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 125px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+  text-align:center;
+
+  top: 68px;
+  left: 50px;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  
+ 
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+/* SHOW ODPOWIADA ZA NIEPOKAZYWANIE ROZWIJANEGO MENU MACHINES PO KLIKNIECIU
+	W INNE MIEJSCE NIZ PRZYCISKI MENU */
+.show 
+{
+	display: block;
+}
+
+/*--------------------------------------------------------- */
+
+/* H2 I SQUARE TO - ENERGY CONSUMPTION - NAPIS - ORAZ DATA COLLECTING */
+
+.h2 {
+  text-shadow: 1px 1px #808080;
+}
+
+.square {
+  height: 25px;
+  width: 170px;
+  background-color: #32CD32;
+   font-size: 19px;
+
+
+  
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-align:center;
+  
+  
+
+}
+/*--------------------------------------------------------- */
+
+/* TABELA KTOREJ ELEMENTAMI NA STRONIE SA YESTERDAY, LAST WEEK, LAST MONTH, ALL DATA */
+
+table, td, th {
+  border: 0px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  height: 50px;
+  vertical-align: top;
+}
+
+/*--------------------------------------------------------- */
+
+
+/* Create three equal columns that floats next to each other */
+/* ELEMENTY DLA PRZYCISKU PARAMETERS, DZIEKI KTORYM JAVASCRIPT
+	ROZROZNIA BADANY PARAMETR, A,V,W - NIE JEST TO DOPRACOWANE */
+.column {
+	display:block;
+	float: center;
+	background-color: #ffff;
+	font-size: 30px;
+	text-shadow: 1px 1px gray;
+	
+ 
+}
+.column2 {
+	display:none;
+	float: center;
+	background-color: #ffff;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+	margin-left:500px;
+	margin-right:auto;
+}
+
+/*---------------------------------------------------------*/
+
+/* TO SAMO CO DLA DROPDOWN I DROPBTN TYLKO JEST TO PRZYPADEK PARAMETERS */ 
+
+
+.dropdown_2 {
+  position: relative;
+  display: inline-block;
+  float: right;
+  top:50px;
+  right: 150px;
+}
+
+.dropdown-content_2 {
+  display: inline-block;
+  position: absolute;
+  text-align:center;
+ 
+
+}
+.button_parameters
+{
+	 border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.dropdown-content_2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  
+ 
+}
+	/* hover odpowiada za przyciemnienie wybranego elementu(przycisku ( w tym przypadku referencji -a-) ) */
+.dropdown_2 a:hover {background-color: #ddd;}
+
+
+  .dropbtn_2 {
+	  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  border-radius: 8px;
+	  
+  opacity: 0.8;
+  transition: 0.3s;
+	  
+  background-color: #3498DB;
+  color: black;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  position:absolute;
+  font-weight:bold;
+  top: 350px;
+  left: 50px;
+ 
+}
+
+.dropbtn_2:hover, .dropbtn_2:focus {
+  background-color: #2980B9;
+ 
+}
+.show_2 
+{
+	display: block;
+}
+
+/*---------------------------------------------------------*/
+
+.test2
+{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  border-radius: 8px;
+	  
+  opacity: 0.9;
+  transition: 0.3s;
+	width:100px;
+	border:none;
+	font-weight:bold;
+	height: 40px;
+	padding: 10px;
+	font-size:20px;
+	cursor:pointer;
+	margin-top:25px;
+	
+}
+.test2:hover, .test2:focus {
+  background-color: #2980B9;
+}
+
+
+/* ----------------------------------- * /
+
+
+
+</style>
